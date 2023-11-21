@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="src/css/global/general.css">
+  <script src="src/js/page/login.js" defer></script>
+</head>
+<body>
+  
+  <section class="section-login-home">
+
+    <div class="container-login-home">
+      <form action="" method="" class="content-form-login">
+
+        <img class="brand-form" src="assets/image/content/brand.png" alt="">
+
+        <div class="content-input">
+          <label class="label-content-input" for="input-login-user">Login</label>
+
+          <div class="box-input">
+            <img class="img-input img-left" src="assets/image/icons/login-user.png" alt="">
+            <input class="input-default" type="text" id="input-login-user" name="input-login-user" placeholder="insira o login">
+          </div>
+
+          <p class="mensage-login input-mensage">mensagem de erro</p>
+        </div>
+
+        <div class="content-input">
+          <label class="label-content-input" for="input-login-password">Senha</label>
+
+          <div class="box-input">
+            <img class="img-input img-left" src="assets/image/icons/login-password.png" alt="">
+            <input class="input-default" type="password" id="input-login-password" name="input-login-password" placeholder="insira sua senha">
+          
+            <img class="img-input img-right visible" id="password-img-01" src="assets/image/icons/login-visible.png" alt="">
+            <img class="img-input img-right"         id="password-img-02" src="assets/image/icons/login-hidden.png" alt="">
+          </div>
+
+          <p class="mensage-login input-mensage">mensagem de erro</p>
+        </div>
+        
+        <div class="content-button">
+          <button id="button-login-register" class="button-login button-login-01" type="button">Entrar</button>
+          <button id="button-login-to-enter" class="button-login button-login-02" type="button">Cadastrar</button>
+        </div>
+
+        <p class="footer-description">Projeto integrador 5 semestre ADS | 2023</p>
+        
+      </form>
+    </div>
+
+    <div class="container-login-register">
+      <form action="" method="" class="content-form-register">
+
+        <div class="content-input">
+          <label class="label-content-input" for="input-register-name">Nome de usuário</label>
+
+          <div class="box-input">
+            <img class="img-input img-left" src="assets/image/icons/login-user.png" alt="">
+            <input class="input-default" type="text" id="input-register-name" name="input-register-name" placeholder="Insira seu nome">
+          </div>
+
+          <p class="mensage-register input-mensage" id="mensage-register-name"></p>
+        </div>
+
+        <div class="content-input">
+          <label class="label-content-input" for="input-register-cpf">Insira seu CPF</label>
+
+          <div class="box-input">
+            <img class="img-input img-left" src="assets/image/icons/login-user.png" alt="">
+            <input class="input-default" type="text" id="input-register-cpf" name="input-register-cpf" placeholder="000.000.000-00">
+          </div>
+
+          <p class="mensage-register input-mensage" id="mensage-register-cpf"></p>
+        </div>
+
+        <div class="content-input">
+          <label class="label-content-input" for="input-register-login">Nome de login</label>
+
+          <div class="box-input">
+            <img class="img-input img-left" src="assets/image/icons/login-user.png" alt="">
+            <input class="input-default" type="text" id="input-register-login" name="input-register-login" placeholder="Insira seu login">
+          </div>
+
+          <p class="mensage-register input-mensage" id="mensage-register-login"></p>
+        </div>
+
+        <div class="content-input">
+          <label class="label-content-input" for="input-register-password">Senha</label>
+
+          <div class="box-input">
+            <img class="img-input img-left" src="assets/image/icons/login-password.png" alt="">
+            <input class="input-default" type="password" id="input-register-password" name="input-register-password" placeholder="insira sua senha">
+          
+            <img class="img-input img-right visible" id="password-img-03" src="assets/image/icons/login-visible.png" alt="">
+            <img class="img-input img-right"         id="password-img-04" src="assets/image/icons/login-hidden.png" alt="">
+          </div>
+
+          <p class="mensage-register input-mensage" id="mensage-register-password"></p>
+        </div>
+        
+        <div class="content-button">
+          <button id="button-register-register" class="button-login button-login-01" type="button">Cadastrar</button>
+          <button id="button-register-login" class="button-login button-login-02" type="button">Fazer Login</button>
+        </div>
+
+        <p class="mensage-register input-mensage" id="footer-description-register"></p>
+        
+      </form>
+    </div>
+    
+    <div class="container-divider active" id="container-divider"></div>
+
+  </section>
+
+</body>
+</html>

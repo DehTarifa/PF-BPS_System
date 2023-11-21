@@ -1,0 +1,189 @@
+/*----------------------------------------------------------*/
+
+.section-login-home{
+  background: var(--color-dark-03);
+  height: 100vh;
+  width: 100%;
+
+  display: flex;
+  position: relative;
+}
+
+.container-login-home,
+.container-login-register{
+  width: 100%;
+  height: 100%;
+}
+
+.content-form-login,
+.content-form-register{
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*----------------------------------------------------------*/
+
+.brand-form{
+  width: 100%;
+  max-width: 15rem;
+  margin-bottom: 1.5rem;
+}
+
+.content-input{
+  margin-bottom: 1rem;
+  width: 100%;
+  max-width: 450px;
+}
+
+.label-content-input{
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  display: block;
+}
+
+.box-input{
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  width: 100%;
+}
+
+.input-default{
+  height: 55px;
+  width: 100%;
+  padding-left: 2.6rem;
+
+  border-radius: 3px;
+  border: none;
+  background-color: #2c2c2c;
+  
+  color: #ffffffa4;
+  font-size: 14px;
+  border: 1px solid transparent;
+}
+
+.input-default.valid{
+  border: 1px solid #00cf45;
+}
+
+.input-default.invalid{
+  border: 1px solid #cf0000;
+}
+
+.input-default:focus{
+  outline: 1px solid var(--color-purple-01);
+}
+
+.input-mensage{
+  font-size: 14px;
+  font-weight: 400;
+  visibility: hidden;
+  height: 18px;
+}
+
+.input-mensage.valid{
+  color: #00cf45;
+  visibility: visible;
+}
+
+.input-mensage.invalid{
+  color: #cf0000;
+  visibility: visible;
+}
+
+/*----------------------------------------------------------*/
+
+.img-input{
+  width: 100%;
+  max-width: 20px;
+  position: absolute;
+  z-index: 1;
+}
+
+.img-left{
+  left: 10px;
+}
+
+.img-right{
+  right: 15px;
+  display: block;
+  cursor: pointer;
+}
+
+.img-right.visible{
+  display: none;
+}
+
+/*----------------------------------------------------------*/
+
+.content-button{
+  width: 100%;
+  max-width: 450px;
+
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.button-login{
+  border: none;
+  height: 50px;
+  width: 100%;
+
+  max-width: 350px;
+  color: #fff;
+  border-radius: 3px;
+
+  background: transparent;
+  cursor: pointer;
+}
+
+.button-login-01{
+  background: var(--color-purple-03);
+}
+
+.button-login-02{
+  border: 2px solid var(--color-purple-01);
+}
+
+/*----------------------------------------------------------*/
+
+.footer-description{
+  color: #ffffff5e;
+  font-size: 14px;
+
+  width: 100%;
+  max-width: 450px;
+  margin-top: 10px;
+  text-align: center;
+  font-weight: 300;
+}
+
+#footer-description-register{
+  margin-top: 1.5rem;
+}
+
+/*----------------------------------------------------------*/
+
+.container-divider{
+  height: 100vh;
+  width: 50%;
+  background-color: var(--color-purple-01);
+  position: absolute;
+  z-index: 99;
+  transition: .5s ease;
+
+  background-image: linear-gradient(#c24af289, #5e17eb89), url(../../../assets/image/content/empresa.jpg);
+  background-position: bottom;
+  background-size: cover;
+}
+
+.container-divider.active{
+  transform: translateX(100%);
+}

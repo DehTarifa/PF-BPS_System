@@ -1,0 +1,28 @@
+/*----------------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+@import "../page/login.css";
+@import "../page/service.css";
+@import "../components/table.css";
+
+/*----------------------------------------------------------*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+:root{
+    --color-dark-01:    #212123;
+    --color-dark-02:    #161617;
+    --color-dark-03:    linear-gradient(90deg, #212123 0%, #161617 100%);
+  
+    --color-purple-01:  #C14AF2;
+    --color-purple-02:  #5E17EB;
+    --color-purple-03:  linear-gradient(90deg, #c14af2 0%, #5e17eb 100%);
+}
+
+/*----------------------------------------------------------*/

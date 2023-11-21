@@ -1,0 +1,144 @@
+/*----------------------------------------------------------*/
+
+.section-services{
+    display: flex;
+    background-color: var(--color-dark-02);
+}
+
+/*----------------------------------------------------------*/
+
+.container-side-menu{
+    width: 100%;
+    max-width: 67px;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1rem;
+    
+    transition: .3s ease;
+
+    border-right: 1px solid rgba(255, 255, 255, 0.11);
+}
+
+/*----------------------------------------------------------*/
+
+.content-brand-side-bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 65px;
+    height: 75px;
+
+    gap: 10px;
+    overflow: hidden;
+}
+
+.content-brand-side-bar > img{
+    width: 100%;
+    max-width: 45px;
+}
+
+.content-brand-side-bar > p{
+    color: aliceblue;
+    width: 100%;
+    min-width: 300px;
+}
+
+.content-brand-side-bar > p > strong{
+    color: #C14AF2;
+}
+
+.container-side-menu.active > .content-brand-side-bar{
+    min-width: 200px;
+    width: 100%;
+    max-width: 200px;
+}
+
+/*----------------------------------------------------------*/
+
+.content-menu-option{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 67px;
+}
+
+.button-side-menu{
+    width: 65px;
+    height: 65px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: transparent;
+
+    border: none;
+    border-right: 2px solid transparent;
+
+    cursor: pointer;
+    transition: .2s ease;
+}
+
+.button-side-menu:hover{
+    border-right: 2px solid #C14AF2;
+}
+
+.button-side-menu > img{
+    width: 100%;
+    max-width: 20px;
+    opacity: .5;
+    transition: .2s ease;
+}
+
+.button-side-menu:hover > img{
+    opacity: 1;
+}
+
+.button-side-menu > p{
+    color: aliceblue;
+    font-size: 1rem;
+    opacity: .5;
+    transition: .2s ease;
+
+    width: 100%;
+    text-align: start;
+}
+
+.button-side-menu:hover > p{
+    opacity: 1;
+}
+
+/*----------------------------------------------------------*/
+
+.content-menu-footer{
+    height: 75px;
+    width: 100%;
+    max-width: 300px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-menu-footer > img{
+    width: 100%;
+    max-width: 20px;
+}
+
+.content-menu-footer > p{
+    display: none;
+}
+
+/*----------------------------------------------------------*/
+
+.container-interface{
+    width: 100%;
+    height: 100vh;
+}

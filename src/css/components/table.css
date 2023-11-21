@@ -1,0 +1,81 @@
+/*----------------------------------------------------------*/
+
+.data-table{
+  background-color: var(--color-dark-02);
+}
+
+/*----------------------------------------------------------*/
+
+.data-table-header{
+  height: 50px;
+  background-color: var(--color-dark-01);
+}
+
+.data-table-header > tr{
+
+}
+
+.data-table-header > tr > th{
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+
+  padding: 0px 50px;
+}
+
+/*----------------------------------------------------------*/
+
+.data-table-body{
+
+}
+
+.data-table-body > tr{
+  height: 50px;
+  background-color: var(--color-dark-01);
+  transition: .2s ease;
+}
+
+.data-table-body > tr:hover{
+  background-color: var(--color-purple-01);
+}
+
+.data-table-body > tr:hover > td{
+  color: white;
+}
+
+.data-table-body > tr > td{
+  color: rgba(255, 255, 255, 0.479);
+  font-size: 14px;
+  font-weight: 400;
+
+  padding: 0px 30px;
+  transition: .2s ease;
+} 
+
+/*----------------------------------------------------------*/
+
+.data-table-option{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px ;
+  height: 50px;
+}
+
+.data-table-body > tr:hover .button-table-option > img{
+  opacity: 1;
+}
+
+.button-table-option{
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.button-table-option > img{
+  width: 100%;
+  max-width: 20px;
+  opacity: .5;
+  transition: .2s ease;
+}
