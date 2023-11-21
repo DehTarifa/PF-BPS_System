@@ -140,5 +140,42 @@
 
 .container-interface{
     width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
     height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+}
+
+.container-button{
+    width: 100%;
+    max-width: 1168px;
+    padding: 30px 0;
+
+    display: flex;
+    justify-content: end;
+}
+
+.container-button > button{
+    border: none;
+    height: 50px;
+    width: 100%;
+    max-width: 300px;
+
+    background-color: #C14AF2;
+    border: 1px solid #C14AF2;
+    border-radius: 3px;
+    color: aliceblue;
+
+    cursor: pointer;
+
+    transition: .3s ease;
+}
+
+.container-button > button:hover{
+    background-color: transparent;
+    border: 1px solid #C14AF2;
 }
