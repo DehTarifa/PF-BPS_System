@@ -1,0 +1,78 @@
+/* CONTAINER MODAL -------------------------------*/
+
+.modal-add{
+  display: none;
+  align-items: center;
+  justify-content: center;
+
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+
+  background-color: rgba(0, 0, 0, 0.438);
+}
+
+.modal-add.active{
+  display: flex;
+}
+
+.modal-add > form{
+  width: 100%;
+  max-width: 700px;
+  background-color: var(--color-dark-02);
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  padding: 30px;
+  border: 5px;
+}
+
+.modal-add > form > .box-input{
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-add > form > .box-input > label{
+  color: rgba(255, 255, 255, 0.582);
+  font-size: 16px;
+}
+
+.modal-add > form > .box-input > input{
+  border: none;
+  padding: 15px;
+  background-color: var(--color-dark-01);
+  color: aliceblue;
+  border-radius: 0;
+  font-size: 16px;
+}
+
+.modal-add > form > .box-input > input:focus{
+  outline: 1px solid var(--color-purple-01);
+}
+
+.modal-add > form > .default-button{
+  max-width: 500px;
+}
+
+.input-modal-select{
+  border: none;
+  padding: 15px;
+  background-color: var(--color-dark-01);
+  color: aliceblue;
+  border-radius: 0;
+  font-size: 16px;
+}
+
+.input-modal-select > option{
+  border: none;
+  padding: 15px;
+  background-color: var(--color-dark-01);
+  color: aliceblue;
+  border-radius: 0;
+  font-size: 16px;
+}
+
+.input-modal-select:focus{
+  outline: 1px solid var(--color-purple-01);
+}

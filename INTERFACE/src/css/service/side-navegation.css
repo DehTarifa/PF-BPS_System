@@ -1,0 +1,111 @@
+
+/* SIDE NAVEGATION BAR ---------------------------*/
+
+.side-navegation{
+  background-color: var(--color-dark-02);
+
+  width: 100%;
+  max-width: 70px;
+  height: 100vh;
+
+  border-right: 1px solid rgba(255, 255, 255, 0.082);
+}
+
+.container-side-navegation{
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+}
+
+/* SIDE NAVEGATION BAR | SN HEADER ---------------*/
+
+.sn-header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10%;
+}
+
+.sn-header > img{
+  width: 100%;
+  max-width: 50px;
+}
+
+/* SIDE NAVEGATION BAR | SN MAIN -----------------*/
+
+.sn-main{
+  height: 80%;
+
+  gap: 5px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.sn-main > .button-sn{
+  width: 100%;
+  border: none;
+  background-color: transparent;
+
+  height: 55px;
+  cursor: pointer;
+
+  border-right: 3px solid transparent;
+  transition: .4s ease;
+}
+
+.sn-main > .button-sn > img{
+  width: 100%;
+  max-width: 20px;
+  opacity: .5;
+
+  transition: .4s ease;
+}
+
+.sn-main > .button-sn:hover,
+.sn-main > .button-sn.active{
+  border-right: 3px solid var(--color-purple-01);
+  background-color: rgba(240, 248, 255, 0.075);
+}
+
+.sn-main > .button-sn:hover > img,
+.sn-main > .button-sn.active > img{
+  opacity: 1;
+}
+
+
+/* SIDE NAVEGATION BAR | SN FOOTER ---------------*/
+
+.sn-footer{
+  height: 10%;
+}
+
+.sn-footer > .button-sn-footer{
+  width: 100%;
+  border: none;
+  background-color: transparent;
+
+  height: 70px;
+  cursor: pointer;
+
+  border-right: 3px solid transparent;
+  transition: .4s ease;
+}
+
+.sn-footer > .button-sn-footer > img{
+  width: 100%;
+  max-width: 25px;
+  opacity: .5;
+
+  transition: .4s ease;
+}
+
+.sn-footer > .button-sn-footer:hover{
+  border-right: 3px solid var(--color-purple-01);
+  background-color: rgba(240, 248, 255, 0.075);
+}
+
+.sn-footer > .button-sn-footer:hover > img{
+  opacity: 1;
+}

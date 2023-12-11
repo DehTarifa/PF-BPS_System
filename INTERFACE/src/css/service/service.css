@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+@import 'side-navegation.css';
+@import 'data-table.css';
+@import 'modal.css';
+
+/*----------------------------------------------------------*/
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins';
+}
+
+:root{
+  --color-dark-01:    #212123;
+  --color-dark-02:    #161617;
+  --color-dark-03:    linear-gradient(90deg, #212123 0%, #161617 100%);
+
+  --color-purple-01:  #C14AF2;
+  --color-purple-02:  #5E17EB;
+  --color-purple-03:  linear-gradient(90deg, #c14af2 0%, #5e17eb 100%);
+}
+
+/*----------------------------------------------------------*/
+
+.main{
+  display: flex;
+}
+
+#main-container{
+  background-color: var(--color-dark-02);
+  width: 100%;
+  height: 100vh;
+  padding: 50px;
+}
+
+/*----------------------------------------------------------*/
+
+.default-button{
+  border: none;
+  height: 55px;
+  width: 100%;
+
+  max-width: 300px;
+  color: #fff;
+  border-radius: 3px;
+
+  background: var(--color-purple-03);
+  cursor: pointer;
+}

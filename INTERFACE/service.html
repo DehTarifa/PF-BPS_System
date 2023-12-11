@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> BPS SYSTEM - ANOTAÇÃO </title>
+
+    <link   rel="stylesheet" href="src/css/service/service.css">
+
+    <script src="src/js/page/jquery.js" defer></script>
+    
+    <script src="src/js/page/service.js" defer></script>
+
+</head>
+<body>
+
+    <main class="main">
+
+        <!--  SIDE NAVEGATION BAR --------------------------->
+
+        <div class="side-navegation">
+            <div class="container-side-navegation">
+
+                <div class="sn-header">
+                    <img src="assets/image/brand/brand.png" alt="">
+                </div>
+
+                <div class="sn-main">
+
+                    <button class="button-sn">
+                        <img src="assets/image/icon-service/01.png" alt="">
+                    </button>
+
+                    <button class="button-sn">
+                        <img src="assets/image/icon-service/02.png" alt="">
+                    </button>
+
+                    <button class="button-sn">
+                        <img src="assets/image/icon-service/03.png" alt="">
+                    </button>
+
+                    <button class="button-sn">
+                        <img src="assets/image/icon-service/04.png" alt="">
+                    </button>
+                    
+                    <button class="button-sn active">
+                        <img src="assets/image/icon-service/05.png" alt="">
+                    </button>
+
+                    <button class="button-sn">
+                        <img src="assets/image/icon-service/06.png" alt="">
+                    </button>
+
+                    <button class="button-sn">
+                        <img src="assets/image/icon-service/07.png" alt="">
+                    </button>
+
+                    <button class="button-sn">
+                        <img src="assets/image/icon-service/08.png" alt="">
+                    </button>
+
+                </div>
+
+                <div class="sn-footer">
+
+                    <button class="button-sn-footer">
+                        <img src="assets/image/icon-service/saida.png" alt="">
+                    </button>
+
+                </div>
+
+            </div>
+        </div>
+
+        <!--  MAIN CONTAINER -------------------------------->
+        
+        <section id="main-container">
+            
+            <div class="container-data-table">
+
+                <div class="row-data-table">
+
+                    <button class="default-button" id="new-client">
+                        + Adicionar Cliente
+                    </button>
+
+                </div>
+
+                <div class="row-data-table">
+                    <table class="data-table">
+
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th></th>
+                                <th>Nome</th>
+                                <th>Classificação</th>
+                                <th>CPF</th>
+                                <th>Telefone</th>
+                                <th>Cidade</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+
+                        <tbody id="data-table-body"></tbody>
+
+                    </table>
+                </div>
+
+                <div class="row-data-table"></div>
+
+            </div>
+
+        </section>
+        
+        <!--  MODAL ADD ------------------------------------->
+
+        <div class="modal-add" id="modal-add">
+            <form id="form-client">
+
+                <div class="box-input">
+                    <label for="modal-input-name">Nome do cliente:</label>
+                    <input class="modal-input" type="text" id="modal-input-name" name="modal-input-name" placeholder="Nome do cliente">
+                </div>
+
+                <div class="box-input">
+                    <label for="modal-input-cpf">CPF:</label>
+                    <input class="modal-input" type="text" id="modal-input-cpf" name="modal-input-cpf" placeholder="000.000.000-00">
+                </div>
+
+                <div class="box-input">
+                    <label for="modal-input-phone">Telefone:</label>
+                    <input class="modal-input" type="text" id="modal-input-phone" name="modal-input-phone" placeholder="(00) 0 0000-0000">
+                </div>
+
+                <div class="box-input">
+                    <label for="modal-input-city">Cidade:</label>
+                    <input class="modal-input" type="text" id="modal-input-city" name="modal-input-city" placeholder="Cidade do cliente">
+                </div>
+
+                <div class="box-input">
+                    <select name="" id="modal-select-class" class="input-modal-select" required></select>
+                </div>
+
+                <div class="box-input" id="div-status">
+                   <select name="" id="modal-select-status" class="input-modal-select">
+                        <option value="true">Ativo</option>
+                        <option value="false">Inativo</option>
+                   </select>
+                </div>
+                
+                <input type="hidden" id="modal-input-hidden">
+
+                <button type="button" class="default-button" id="button-modal-save">
+                    Salvar Cliente
+                </button>
+
+                <button type="button" class="default-button" id="button-modal-cancel">
+                    Cancelar
+                </button>
+            
+            </form>
+        </div>
+
+    </main>
+
+</body>
+</html>

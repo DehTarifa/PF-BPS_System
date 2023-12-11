@@ -1,0 +1,95 @@
+/* CONTAINER DATA TABLE --------------------------*/
+
+.container-data-table{
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}
+
+/* CONTAINER DATA TABLE | ROW --------------------*/
+
+.container-data-table > .row-data-table{
+  width: 100%;
+}
+
+.container-data-table > .row-data-table:nth-child(1){
+  height: 10%;
+  margin-bottom: 15px;
+
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.container-data-table > .row-data-table:nth-child(2){
+  height: 80%;
+}
+
+.container-data-table > .row-data-table:nth-child(3){
+  height: 10%;
+}
+
+/* CONTAINER DATA TABLE | ROW --------------------*/
+
+.data-table{
+  width: 100%;
+  background-color: var(--color-dark-01);
+  color: aliceblue;
+
+  border-collapse: collapse;
+}
+
+.data-table > thead > tr > th{
+  font-weight: 600;
+  text-align: start;
+  padding: 15px;
+
+  border: none;
+  border-bottom: 1px solid #ffffff17;
+}
+
+.data-table > thead > tr > th:nth-child(1),
+.data-table > thead > tr > th:nth-child(2){
+  width: 35px;
+  text-align: center;
+  padding: 0;
+}
+
+.data-table > tbody > tr{
+  transition: .4s ease;
+}
+
+.data-table > tbody > tr > td{
+  font-weight: 300;
+  text-align: start;
+  padding: 15px;
+  border: none;
+  opacity: .5;
+
+  transition: .4s ease;
+}
+
+.data-table > tbody > tr > td:nth-child(1),
+.data-table > tbody > tr > td:nth-child(2){
+  text-align: center;
+  padding: 0;
+}
+
+.data-table > tbody > tr:hover{
+  background-color: #c24af2be;
+}
+
+.data-table > tbody > tr:hover > td{
+  opacity: 1;
+}
+
+.button-data-table{
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.data-table > tbody > tr > td > .button-data-table > img{
+  width: 100%;
+  max-width: 18px;
+}
